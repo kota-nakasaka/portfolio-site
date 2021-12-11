@@ -2,39 +2,41 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="static/icon-48x48.png" />
     <title>Photo Gallery by KOTA NAKASAKA</title>
     <link rel="stylesheet" href="stylesheet.css"> 
+    <link rel="stylesheet" href="responsive.css" media="screen and (max-width: 590px )">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-      <div id="nav">
+      <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="landscape.html">Landscape</a></li>
           <li><a href="portrait.html">Portrait</a></li>
           <li><a href="aboutme.html">About me</a></li>
         </ul>
-      </div>
+      </nav>
    
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
         $(function () {
           $(window).scroll(function () {
            if ($(this).scrollTop() > 10) {
-           $('#nav').addClass('fixed');
+           $('nav').addClass('fixed');
           } else {
-           $('#nav').removeClass('fixed');
+           $('nav').removeClass('fixed');
           }
         });
       });
       </script>
 
       <div id="top">
-        <img src="images/mori.jpg" />
+        <img src="https://res.cloudinary.com/dvufpb4vx/image/upload/v1625867504/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88/_DSC4761_ooxsd1.jpg" />
         <p>landscape</p>
       </div>
 
@@ -68,12 +70,12 @@
 
 
 
-      <div id="footer">
+      <footer>
        <h1>
         <a href="http://www.instagram.com/ko_dai.photography"><img id="sns-link" src="https://res.cloudinary.com/dvufpb4vx/image/upload/v1625575614/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88/instagram_gtxfin.png" /></a>
        </h1>
        <p>&copy; 2021 KOTA   ALL Rights Reserved.</p>
-      </div>
+      </footer>
     
 </body>
 </html>

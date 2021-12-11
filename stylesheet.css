@@ -18,13 +18,13 @@ body {
 }
 
 /* -------menue------ */
-#nav {
+nav {
     margin: 0;
     padding: 0;
     width: 100%;
     background-color: white;
 }
-#nav ul{
+nav ul{
     display: table;
     margin: 0 auto;
     padding: 0 ;
@@ -32,22 +32,23 @@ body {
     text-align: center;
     line-height: 70px;
 }
-#nav li{
+nav li{
     display: table-cell;
     min-width: 50px;
     height: 70px;
 }
-#nav a{
+nav a{
     display: block;
     width: 100%;
     text-decoration: none;
     color: #555;
     padding-bottom: 5px;
+    font-size: 150%;
 }
-#nav li.current{
+nav li.current{
     border-bottom: 3px solid #92D050;
 }
-#nav li:hover{
+nav li:hover{
     color: #E7DA66;
     border-bottom: 3px solid #4d9ce6;
 }
@@ -120,7 +121,7 @@ body {
 }
 
 
-#footer {
+footer {
     display: block;
     width: 100%;
     height: auto;
@@ -208,7 +209,7 @@ body {
     text-align: center;
     font-family: 'Kiwi Maru', serif;
     color: rgb(2, 2, 2);
-    font-size: 60%;
+    font-size: 100%;
     line-height: 300%;
     letter-spacing: 2px;
 
